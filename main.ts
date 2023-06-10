@@ -63,6 +63,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, l
     game.gameOver(true)
 })
 let mySprite: Sprite = null
+game.showLongText("press arrows to move", DialogLayout.Bottom)
+game.showLongText("press A to jump", DialogLayout.Bottom)
 mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . f f f f f f . . . . . 
