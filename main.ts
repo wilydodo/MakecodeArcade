@@ -2,10 +2,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, l
     game.setGameOverMessage(false, "you Trolled. Lol")
     game.gameOver(false)
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile4`, function (sprite, location) {
-    game.setGameOverMessage(false, "you Trolled. Lol")
-    game.gameOver(false)
-})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(img`
         . . . . . . . . . . . . . . . . 
@@ -61,6 +57,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, l
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, location) {
     game.setGameOverMessage(true, "GG")
     game.gameOver(true)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
+    game.setGameOverMessage(false, "you Trolled. Lol")
+    game.gameOver(false)
 })
 let mySprite: Sprite = null
 game.showLongText("press arrows to move", DialogLayout.Bottom)
