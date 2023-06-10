@@ -1,3 +1,7 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
+    game.setGameOverMessage(false, "you Trolled. Lol")
+    game.gameOver(false)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile4`, function (sprite, location) {
     game.setGameOverMessage(false, "you Trolled. Lol")
     game.gameOver(false)
