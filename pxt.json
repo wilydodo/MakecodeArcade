@@ -2,7 +2,9 @@
     "name": "aaaa",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "arcade-character-animations": "github:microsoft/arcade-character-animations#v0.0.2"
     },
     "files": [
         "main.blocks",
